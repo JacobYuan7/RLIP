@@ -1,2 +1,2 @@
 # RLIP: Relational Language-Image Pre-training for Human-Object Interaction Detection
-Codes will be available upon publication. So stay tuned!
+Code will be available upon publication. So stay tuned!
