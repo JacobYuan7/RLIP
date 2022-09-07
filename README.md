@@ -12,7 +12,7 @@ Code will be available upon publication. So stay tuned!
 ```bib
 @article{yuan2022RLIP,
   title={RLIP: Relational Language-Image Pre-training for Human-Object Interaction Detection},
-  author={Yuan, Hangjie and Jiang, Jianwen and Albanie, Samuel and Feng, Tao and Huang, Ziyuan and Ni, Dong and Tang, Mingqian,
+  author={Yuan, Hangjie and Jiang, Jianwen and Albanie, Samuel and Feng, Tao and Huang, Ziyuan and Ni, Dong and Tang, Mingqian},
   journal={arXiv preprint arXiv:2209.01814},
   year={2022}
 }
