@@ -1,5 +1,7 @@
-# RLIP: Relational Language-Image Pre-training for Human-Object Interaction Detection
+# [NeurIPS 2022] RLIP: Relational Language-Image Pre-training for Human-Object Interaction Detection
 This repo contains the implementation of various methods to resolve HOI detection (not limited to RLIP), aiming to serve as a benchmark for HOI detection.
+
+💥**News**! **RLIP: Relational Language-Image Pre-training** is accepted to NeurIPS 2022! Hope you will enjoy reading it.
 
 [![arXiv](https://img.shields.io/badge/arXiv-Paper-<COLOR>.svg)](https://arxiv.org/abs/2209.01814)
 [![GitHub Stars](https://img.shields.io/github/stars/JacobYuan7/RLIP?style=social)](https://github.com/JacobYuan7/RLIP)
