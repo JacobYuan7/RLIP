@@ -97,7 +97,83 @@ Note that only Python2 can be used for this conversion because `vsrl_utils.py` i
 
 V-COCO annotations with the HOIA format, `corre_vcoco.npy`, `test_vcoco.json`, and `trainval_vcoco.json` will be generated to `annotations` directory.
 
+## RLIP Pre-training
+Since RLIP pre-trained on VG and COCO dataset, we provide a series of pre-trained weights for you to use. 
+| Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Download |
+| ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: |
+| ParSeD | Object Detection | VG |ResNet-50 | DDETR | [link](******Link to be added******) |
+| MDETR-ParSe | Modulated Detection | GoldG+ | ResNet-101 | DETR | [link](******Link to be added******) |
+| RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | [link](******Link to be added******) |
+| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | [link](******Link to be added******) |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | [link](******Link to be added******) |
 
-Code will be available upon publication. So stay tuned!
+With respect to the first and last line of the pre-trained weights, they are produced from the original codebase. For further reference, you could visit [DDETR](https://github.com/fundamentalvision/Deformable-DETR) and [MDETR](https://github.com/ashkamath/mdetr). The weights provided above are transformed from original codebases. With respect to the other three models' weights, optionally, you can pre-train the model yourself by running the corresponding script:
+```shell
+# RLIP-ParSe
+bash Pre-train_RLIP-ParSe_VG.sh
+# RLIP-ParSeD
+bash Pre-train_RLIP-ParSeD_VG.sh
+```
+Note that above scripts contain the installation of dependencies, which could be done independently. For the `--pretrained` parameter in script, you could ignore it to pre-train from scratch or use ParSeD parameters pre-trained on COCO.
 
+### 2. Few-shot (0, 1%, 10%)
+The scripts are identical to those for fully fine-tuning. The major difference is that we need to add `--few_shot_transfer 10 \` for 10% data of few-shot transfer and  `--few_shot_transfer 1 \` for 1% data of few-shot transfer. Note that we only fine-tune for 10 epochs with the lr dropping at 7th epoch. Thus, you need to change `--lr_drop` and `--epochs` in the script accordingly.
+```shell
+# RLIP-ParSeD on HICO
+bash Fine-tune_RLIP-ParSeD_HICO.sh
+# RLIP-ParSe on HICO
+bash Fine-tune_RLIP-ParSe_HICO.sh
+# ParSe on HICO
+bash Fine-tune_ParSe_HICO.sh
+# ParSeD on HICO
+bash Fine-tune_ParSeD_HICO.sh
+```
+When there is no extra data provided (0 percent of few-shot transfer), please refer to zero-shot NF setting, but performance is present here.
+| Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Data |Full / Rare / Non-Rare | Download |
+| ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 0 | 13.92 / 11.20 / 14.73 | [link](******Link to be added******) |
+| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 1% | 18.30 / 16.22 / 18.92 | [link](******Link to be added******) |
+| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 10% | 22.09 / 15.89 / 23.94 | [link](******Link to be added******) |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 0 | 15.40 / 15.08 / 15.50 | [link](******Link to be added******) |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 1% | 18.46 / 17.47 / 18.76 | [link](******Link to be added******) |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 10% | 22.59 / 20.16 / 23.32   | [link](******Link to be added******) |
 
+### 3. Zero-shot (NF, UC-RF, UC-NF)
+With respect to NF setting, it is actually a testing procedure after loading the pre-trained weights. We could run the script below.
+```shell
+# Zero-shot NF setting with RLIP-ParSe/RLIP-ParSeD
+bash NF_Zero_shot.sh
+```
+With respect to UC-RF and UC-NF setting, training is required. We could run the script below by adding `--zero_shot_setting UC-RF \` or `--zero_shot_setting UC-NF \`. Note that for UC-NF setting, we only fine-tunes for 40 epochs (lr dropping at 30th epoch) to avoid overfitting. Thus, you need to change `--lr_drop 30 \` and `--epochs 40 \` in the script accordingly.
+```shell
+# RLIP-ParSeD on HICO
+bash Fine-tune_RLIP-ParSeD_HICO.sh
+# RLIP-ParSe on HICO
+bash Fine-tune_RLIP-ParSe_HICO.sh
+# ParSe on HICO
+bash Fine-tune_ParSe_HICO.sh
+# ParSeD on HICO
+bash Fine-tune_ParSeD_HICO.sh
+```
+| Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Setting | Full / Rare / Non-Rare | Download |
+| ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | UC-RF | 30.52 / 19.19 / 33.35 | [link](******Link to be added******) |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | UC-NF | 26.19 / 20.27 / 27.67 | [link](******Link to be added******) |
+
+## Evaluation
+The mAP on HICO-DET under the Full set, Rare set and Non-Rare Set will be reported during the training process.
+
+The results for the official evaluation of V-COCO must be obtained by the generated pickle file of detection results.
+```shell
+python generate_vcoco_official.py \
+        --param_path /PATH/TO/CHECKPOINT \
+        --save_path vcoco.pickle \
+        --hoi_path /PATH/TO/VCOCO/DATA \
+```
+Then you should run following codes after modifying the path to get the final performance:
+```shell
+python datasets/vsrl_eval.py
+```
+
+## Acknowledgement
+Part of this work's implemention refers to several prior works including [OCN](https://github.com/JacobYuan7/OCN-HOI-Benchmark), [QPIC](https://github.com/hitachi-rd-cv/qpic), [CDN](https://github.com/YueLiao/CDN), [DETR](https://github.com/facebookresearch/detr), [DDETR](https://github.com/fundamentalvision/Deformable-DETR) and [MDETR](https://github.com/ashkamath/mdetr).
