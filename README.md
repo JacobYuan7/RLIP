@@ -110,9 +110,9 @@ Since RLIP pre-trained on VG and COCO dataset, we provide a series of pre-traine
 With respect to the first and last line of the pre-trained weights, they are produced from the original codebase. For further reference, you could visit [DDETR](https://github.com/fundamentalvision/Deformable-DETR) and [MDETR](https://github.com/ashkamath/mdetr). The weights provided above are transformed from original codebases. With respect to the other three models' weights, optionally, you can pre-train the model yourself by running the corresponding script:
 ```shell
 # RLIP-ParSe
-bash Pre-train_RLIP-ParSe_VG.sh
+bash scripts/Pre-train_RLIP-ParSe_VG.sh
 # RLIP-ParSeD
-bash Pre-train_RLIP-ParSeD_VG.sh
+bash scripts/Pre-train_RLIP-ParSeD_VG.sh
 ```
 Note that above scripts contain the installation of dependencies, which could be done independently. For the `--pretrained` parameter in script, you could ignore it to pre-train from scratch or use ParSeD parameters pre-trained on COCO.
 
@@ -120,13 +120,13 @@ Note that above scripts contain the installation of dependencies, which could be
 The scripts are identical to those for fully fine-tuning. The major difference is that we need to add `--few_shot_transfer 10 \` for 10% data of few-shot transfer and  `--few_shot_transfer 1 \` for 1% data of few-shot transfer. Note that we only fine-tune for 10 epochs with the lr dropping at 7th epoch. Thus, you need to change `--lr_drop` and `--epochs` in the script accordingly.
 ```shell
 # RLIP-ParSeD on HICO
-bash Fine-tune_RLIP-ParSeD_HICO.sh
+bash scripts/Fine-tune_RLIP-ParSeD_HICO.sh
 # RLIP-ParSe on HICO
-bash Fine-tune_RLIP-ParSe_HICO.sh
+bash scripts/Fine-tune_RLIP-ParSe_HICO.sh
 # ParSe on HICO
-bash Fine-tune_ParSe_HICO.sh
+bash scripts/Fine-tune_ParSe_HICO.sh
 # ParSeD on HICO
-bash Fine-tune_ParSeD_HICO.sh
+bash scripts/Fine-tune_ParSeD_HICO.sh
 ```
 When there is no extra data provided (0 percent of few-shot transfer), please refer to zero-shot NF setting, but performance is present here.
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Data |Full / Rare / Non-Rare | Download |
@@ -142,18 +142,18 @@ When there is no extra data provided (0 percent of few-shot transfer), please re
 With respect to NF setting, it is actually a testing procedure after loading the pre-trained weights. We could run the script below.
 ```shell
 # Zero-shot NF setting with RLIP-ParSe/RLIP-ParSeD
-bash NF_Zero_shot.sh
+bash scripts/NF_Zero_shot.sh
 ```
 With respect to UC-RF and UC-NF setting, training is required. We could run the script below by adding `--zero_shot_setting UC-RF \` or `--zero_shot_setting UC-NF \`. Note that for UC-NF setting, we only fine-tunes for 40 epochs (lr dropping at 30th epoch) to avoid overfitting. Thus, you need to change `--lr_drop 30 \` and `--epochs 40 \` in the script accordingly.
 ```shell
 # RLIP-ParSeD on HICO
-bash Fine-tune_RLIP-ParSeD_HICO.sh
+bash scripts/Fine-tune_RLIP-ParSeD_HICO.sh
 # RLIP-ParSe on HICO
-bash Fine-tune_RLIP-ParSe_HICO.sh
+bash scripts/Fine-tune_RLIP-ParSe_HICO.sh
 # ParSe on HICO
-bash Fine-tune_ParSe_HICO.sh
+bash scripts/Fine-tune_ParSe_HICO.sh
 # ParSeD on HICO
-bash Fine-tune_ParSeD_HICO.sh
+bash scripts/Fine-tune_ParSeD_HICO.sh
 ```
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Setting | Full / Rare / Non-Rare | Download |
 | ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
