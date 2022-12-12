@@ -106,7 +106,7 @@ Since RLIP pre-trained on VG and COCO dataset, we provide a series of pre-traine
 | MDETR-ParSe | Modulated Detection | GoldG+ | ResNet-101 | DETR | [link](******Link to be added******) |
 | ParSeD | Object Detection | VG |ResNet-50 | DDETR | [link](******Link to be added******) |
 | ParSeD | Object Detection | COCO |ResNet-50 | DDETR | [link](******Link to be added******) |
-| ParSe | Object Detection | COCO |ResNet-50 | DDETR | [link](******Link to be added******) |
+| ParSe | Object Detection | COCO |ResNet-50 | DETR | [link](******Link to be added******) |
 | RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | [link](******Link to be added******) |
 | RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | [link](******Link to be added******) |
 | RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | [link](******Link to be added******) |
