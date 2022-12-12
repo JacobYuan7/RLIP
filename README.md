@@ -100,7 +100,7 @@ Note that only Python2 can be used for this conversion because `vsrl_utils.py` i
 V-COCO annotations with the HOIA format, `corre_vcoco.npy`, `test_vcoco.json`, and `trainval_vcoco.json` will be generated to `annotations` directory.
 
 ## RLIP Pre-training
-Since RLIP pre-trained on VG and COCO dataset, we provide a series of pre-trained weights for you to use. 
+Since RLIP pre-trained on VG and COCO dataset, we provide a series of pre-trained weights for you to use. Weights in the table below are used to initialize ParSe/ParSeD/RLIP-ParSe/RLIP-ParSeD for pre-training or fine-tuning.
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Download |
 | ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: |
 | MDETR-ParSe | Modulated Detection | GoldG+ | ResNet-101 | DETR | [link](******Link to be added******) |
@@ -111,7 +111,7 @@ Since RLIP pre-trained on VG and COCO dataset, we provide a series of pre-traine
 | RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | [link](******Link to be added******) |
 | RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | [link](******Link to be added******) |
 
-With respect to the first and last line of the pre-trained weights, they are produced from the original codebase. For further reference, you could visit [DDETR](https://github.com/fundamentalvision/Deformable-DETR) and [MDETR](https://github.com/ashkamath/mdetr). The weights provided above are transformed from original codebases. With respect to the other three models' weights, optionally, you can pre-train the model yourself by running the corresponding script:
+With respect to the first, third and fourth line of the pre-trained weights, they are produced from the original codebase. For further reference, you could visit [DDETR](https://github.com/fundamentalvision/Deformable-DETR) and [MDETR](https://github.com/ashkamath/mdetr). The weights provided above are transformed from original codebases. With respect to the last three models' weights, optionally, you can pre-train the model yourself by running the corresponding script:
 ```shell
 # RLIP-ParSe
 bash scripts/Pre-train_RLIP-ParSe_VG.sh
@@ -119,6 +119,18 @@ bash scripts/Pre-train_RLIP-ParSe_VG.sh
 bash scripts/Pre-train_RLIP-ParSeD_VG.sh
 ```
 Note that above scripts contain the installation of dependencies, which could be done independently. For the `--pretrained` parameter in script, you could ignore it to pre-train from scratch or use ParSeD parameters pre-trained on COCO.
+
+### 1. Fully-finetuning
+
+Weights in the table below are fully-fined weights of ParSe/ParSeD/RLIP-ParSe/RLIP-ParSeD using pre-trained weights from the above table.
+| Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Download |
+| ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: |
+| ParSeD | RLIP | COCO | ResNet-50 | DDETR | [link](******Link to be added******) |
+| ParSe | RLIP | COCO | ResNet-50 | DETR | [link](******Link to be added******) |
+| RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | [link](******Link to be added******) |
+| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | [link](******Link to be added******) |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | [link](******Link to be added******) |
+
 
 ### 2. Few-shot (0, 1%, 10%)
 The scripts are identical to those for fully fine-tuning. The major difference is that we need to add `--few_shot_transfer 10 \` for 10% data of few-shot transfer and  `--few_shot_transfer 1 \` for 1% data of few-shot transfer. Note that we only fine-tune for 10 epochs with the lr dropping at 7th epoch. Thus, you need to change `--lr_drop` and `--epochs` in the script accordingly.
