@@ -123,13 +123,13 @@ Note that above scripts contain the installation of dependencies, which could be
 ### 1. Fully-finetuning
 
 Weights in the table below are fully-fined weights of ParSe/ParSeD/RLIP-ParSe/RLIP-ParSeD using pre-trained weights from the above table.
-| Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Download |
-| ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: |
-| ParSeD | RLIP | COCO | ResNet-50 | DDETR | [link](******Link to be added******) |
-| ParSe | RLIP | COCO | ResNet-50 | DETR | [link](******Link to be added******) |
-| RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | [link](******Link to be added******) |
-| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | [link](******Link to be added******) |
-| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | [link](******Link to be added******) |
+| Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Full / Rare / Non-Rare | Download |
+| ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: | :-----------: |
+| ParSeD | RLIP | COCO | ResNet-50 | DDETR |  | [link](******Link to be added******) |
+| ParSe | RLIP | COCO | ResNet-50 | DETR | 31.79 / 26.36 / 33.41 | [link](******Link to be added******) |
+| RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | 29.21 / 24.45 / 30.63 | [link](******Link to be added******) |
+| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 30.70 / 24.67 / 32.50  | [link](******Link to be added******) |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 32.84 / 26.85 / 34.63 | [link](******Link to be added******) |
 
 
 ### 2. Few-shot (0, 1%, 10%)
@@ -145,7 +145,7 @@ bash scripts/Fine-tune_ParSe_HICO.sh
 bash scripts/Fine-tune_ParSeD_HICO.sh
 ```
 When there is no extra data provided (0 percent of few-shot transfer), please refer to zero-shot NF setting, but performance is present here.
-| Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Data |Full / Rare / Non-Rare | Download |
+| Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Data | Full / Rare / Non-Rare | Download |
 | ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 | RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 0 | 13.92 / 11.20 / 14.73 | [link](******Link to be added******) |
 | RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 1% | 18.30 / 16.22 / 18.92 | [link](******Link to be added******) |
