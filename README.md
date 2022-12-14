@@ -107,6 +107,7 @@ Since RLIP pre-trained on VG and COCO dataset, we provide a series of pre-traine
 | ParSeD | Object Detection | VG |ResNet-50 | DDETR | [link](******Link to be added******) |
 | ParSeD | Object Detection | COCO |ResNet-50 | DDETR | [link](******Link to be added******) |
 | ParSe | Object Detection | COCO |ResNet-50 | DETR | [link (Query128)](******Link to be added******) [link (Query200)](******Link to be added******) |
+| ParSe | Object Detection | COCO |ResNet-101 | DETR | [link (Query128)](******Link to be added******) |
 | RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | [link](******Link to be added******) |
 | RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | [link](******Link to be added******) |
 | RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | [link](******Link to be added******) |
@@ -127,6 +128,7 @@ Weights in the table below are fully-fined weights of ParSe/ParSeD/RLIP-ParSe/RL
 | ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: | :-----------: |
 | ParSeD | RLIP | COCO | ResNet-50 | DDETR |  | [link](******Link to be added******) |
 | ParSe | RLIP | COCO | ResNet-50 | DETR | 31.79 / 26.36 / 33.41 | [link](******Link to be added******) |
+| ParSe | RLIP | COCO | ResNet-101 | DETR | 32.76 / 28.59 / 34.01 | [link](******Link to be added******) |
 | RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | 29.21 / 24.45 / 30.63 | [link](******Link to be added******) |
 | RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 30.70 / 24.67 / 32.50  | [link](******Link to be added******) |
 | RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 32.84 / 26.85 / 34.63 | [link](******Link to be added******) |
