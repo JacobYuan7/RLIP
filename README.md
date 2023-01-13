@@ -167,7 +167,7 @@ When there is no extra data provided (0 percent of few-shot transfer), please re
 | RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 1% | 18.46 / 17.47 / 18.76 | [Link](******Link to be added******) |
 | RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 10% | 22.59 / 20.16 / 23.32   | [Link](******Link to be added******) |
 
-Note: \* means that the checkpoints are the same as the one in the RLIP Pre-training table, since they do not involve any fine-tuning.
+Note: ① \* means that the checkpoints are the same as the ones in the RLIP Pre-training table, since they do not involve any fine-tuning.
 
 ### 3. Zero-shot (NF, UC-RF, UC-NF)
 With respect to NF setting, it is actually a testing procedure after loading the pre-trained weights. We could run the script below.
