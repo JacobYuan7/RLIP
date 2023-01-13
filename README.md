@@ -15,7 +15,7 @@ This repo contains the implementation of various methods to resolve HOI detectio
  - [ParSe](https://arxiv.org/abs/2209.01814)
  - [RLIP-ParSeD](https://arxiv.org/abs/2209.01814)
  - [ParSeD](https://arxiv.org/abs/2209.01814)
- - [OCN](https://github.com/JacobYuan7/OCN-HOI-Benchmark), which is a prior work of RLIP published by us;  
+ - [OCN](https://github.com/JacobYuan7/OCN-HOI-Benchmark), which is a prior work of RLIP finished by us;  
  - [QPIC](https://github.com/hitachi-rd-cv/qpic);  
  - [QAHOI](https://github.com/cjw2021/QAHOI);  
  - [CDN](https://github.com/YueLiao/CDN);
