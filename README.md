@@ -160,12 +160,14 @@ bash scripts/Fine-tune_ParSeD_HICO.sh
 When there is no extra data provided (0 percent of few-shot transfer), please refer to zero-shot NF setting, but performance is present here.
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Data | Full / Rare / Non-Rare | Download |
 | ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 0 | 13.92 / 11.20 / 14.73 | [link](******Link to be added******) |
+| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 0 | 13.92 / 11.20 / 14.73 | [link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ESN0gmIqMdtNlfvukKrxOJkBTF_Oz2R32imDfkShe8ZRAA?e=gUQ8pe)\* |
 | RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 1% | 18.30 / 16.22 / 18.92 | [link](******Link to be added******) |
 | RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 10% | 22.09 / 15.89 / 23.94 | [link](******Link to be added******) |
-| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 0 | 15.40 / 15.08 / 15.50 | [link](******Link to be added******) |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 0 | 15.40 / 15.08 / 15.50 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EfsAWI6hauxPoQXxPU96FrEBQO4J0079JQ3R3n5PA58inA?e=tmTD3a)\* |
 | RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 1% | 18.46 / 17.47 / 18.76 | [link](******Link to be added******) |
 | RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 10% | 22.59 / 20.16 / 23.32   | [link](******Link to be added******) |
+
+Note: \* means that the checkpoints are the same as the one in the RLIP Pre-training table, since they do not involve any fine-tuning.
 
 ### 3. Zero-shot (NF, UC-RF, UC-NF)
 With respect to NF setting, it is actually a testing procedure after loading the pre-trained weights. We could run the script below.
