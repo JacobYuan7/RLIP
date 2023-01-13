@@ -43,16 +43,15 @@ If you find our work inspiring or our code useful to your research, please cite:
 ## Annotation Preparation
 | Dataset | Setting | Download |
 | ---------- | :-----------:  | :-----------:  |
-| VG | Pre-training |  |
-| HICO-DET | Few-shot 1%, 10% |  |
-| HICO-DET | Zero-shot (UC-NF, UC-RF) |  |
-| HICO-DET |  |  |
-| HICO-DET |  |  |
+| VG | Pre-training | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EX-OiYEnNSJBscs1pKLLZkcBNWhye5ffmfl42_cjAsvZ2w?e=1mz8Dp) |
+| HICO-DET | Few-shot 1%, 10% | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/Eh7UufFbB_5Dutvr66g-t6sBn5wCeA0uzMwiy8mUxaD50g?e=IKB3SD) |
+| HICO-DET | Zero-shot (UC-NF, UC-RF)\* | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/Ev9BzZxOlT5Mt04wOpIHA5kBP2eA6fijjweI_kh9WN3MUw?e=jMJmu6) |
+| HICO-DET | Relation Label Noise (10%, 30%, 50%) | [Link](https://zjueducn-my.sharepoint.com/:f:/g/personal/hj_yuan_zju_edu_cn/EnG5dDpkompHvy5ez82NQN4Bu9XDpvl9d9P73W7fQEmn7w?e=4dqaZ2) |
 
-Note that Zero-shot (NF) do not need any HICO-DET annotations for fine-tuning.
+Note: ① \* Zero-shot (NF) do not need any HICO-DET annotations for fine-tuning, so we only provide training annotations for the UC-NF and UC-RF setting.
 
 ## Pre-training Dataset (Visual Genome) preparation
-Firstly, we could download VG dataset from the [official link](https://visualgenome.org/api/v0/api_home.html), inclduing images Part I and Part II. The annotations after pre-processing could be downloaded from [this link](******Link to be added******), which is used for pre-training. Note that this is generated from `scene_graphs.json` file by several pre-processing steps to remove redundant triplets. Also, several settings mentioned below also need the annotations that we provide. VG dataset and its corresponding annotations should be organized as follows:
+Firstly, we could download VG dataset from the [official link](https://visualgenome.org/api/v0/api_home.html), inclduing images Part I and Part II. The annotations after pre-processing could be downloaded from the link above, which is used for pre-training. Note that this is generated from `scene_graphs.json` file by several pre-processing steps to remove redundant triplets. Also, several settings mentioned below also need the annotations that we provide. VG dataset and its corresponding annotations should be organized as follows:
 ```
 VG
  |─ annotations
