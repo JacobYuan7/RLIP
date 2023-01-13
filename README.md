@@ -22,7 +22,7 @@ This repo contains the implementation of various methods to resolve HOI detectio
 
 
 ## Citation ##
-If you find our work inspiring or our code useful to your research, please cite:
+If you find our work inspiring or our code/annotations useful to your research, please cite:
 ```bib
 @inproceedings{Yuan2022RLIP,
   title={RLIP: Relational Language-Image Pre-training for Human-Object Interaction Detection},
