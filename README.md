@@ -119,7 +119,7 @@ Since RLIP pre-trained on VG and COCO dataset, we provide a series of pre-traine
 | ParSeD | Object Detection | COCO |ResNet-50 | DDETR | [link](******Link to be added******) |
 | ParSe | Object Detection | COCO |ResNet-50 | DETR | [link (Query128)](******Link to be added******) [link (Query200)](******Link to be added******) |
 | ParSe | Object Detection | COCO |ResNet-101 | DETR | [link (Query128)](******Link to be added******) |
-| RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | [link](******Link to be added******) |
+| RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | [link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EX2W9LDC7aJHqFCCEvlBz5gBV_kw3nokkKO6eZA8468BlQ?e=7GByjS) |
 | RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | [link](******Link to be added******) |
 | RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | [link](******Link to be added******) |
 
