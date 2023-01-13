@@ -117,8 +117,8 @@ Since RLIP pre-trained on VG and COCO dataset, we provide a series of pre-traine
 | MDETR-ParSe | Modulated Detection | GoldG+ | ResNet-101 | DETR | [Link](******Link to be added******) |
 | ParSeD | Object Detection | VG |ResNet-50 | DDETR | [Link](******Link to be added******) |
 | ParSeD | Object Detection | COCO |ResNet-50 | DDETR | [Link](******Link to be added******) |
-| ParSe | Object Detection | COCO |ResNet-50 | DETR | [Link (Query128)](******Link to be added******) [link (Query200)](******Link to be added******) |
-| ParSe | Object Detection | COCO |ResNet-101 | DETR | [Link (Query128)](******Link to be added******) |
+| ParSe | Object Detection | COCO |ResNet-50 | DETR | [Link (Query128)](******Link to be added******) <br> [link (Query200)](******Link to be added******) |
+| ParSe | Object Detection | COCO |ResNet-101 | DETR | [Link (Query128)](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ESEK1Jv5tnhBrvDcGqtYuxwBjZFx2ws-K-qeo9J-LsmdRw?e=d6prKQ) |
 | RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EX2W9LDC7aJHqFCCEvlBz5gBV_kw3nokkKO6eZA8468BlQ?e=7GByjS) |
 | RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ESN0gmIqMdtNlfvukKrxOJkBTF_Oz2R32imDfkShe8ZRAA?e=gUQ8pe) |
 | RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EfsAWI6hauxPoQXxPU96FrEBQO4J0079JQ3R3n5PA58inA?e=tmTD3a) |
