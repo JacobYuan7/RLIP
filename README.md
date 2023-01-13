@@ -6,10 +6,9 @@
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=JacobYuan7/RLIP)
 
 
-**Update on Jan. 13rd, 2023**: I am uploading the annotations and checkpoints. The code is still under pre-release review because we have a technical issue. Sincere apologies!
-**Update on Dec. 12th, 2022**: The code is under reviewing in Alibaba Group, which will be made public as soon as possible.
-
-💥**News**! **RLIP: Relational Language-Image Pre-training** is accepted to ***NeurIPS 2022*** as a **spotlight** presentation (Top 5%)! Hope you will enjoy reading it.
+- **Update on Jan. 13rd, 2023**: I am uploading the annotations and checkpoints. The code is still under pre-release review because we encountered a technical issue. Sincere apologies!
+- **Update on Dec. 12th, 2022**: The code is under reviewing in Alibaba Group, which will be made public as soon as possible.
+- 💥**News**! **RLIP: Relational Language-Image Pre-training** is accepted to ***NeurIPS 2022*** as a **spotlight** presentation (Top 5%)! Hope you will enjoy reading it.
 
 This repo contains the implementation of various methods to resolve HOI detection (not limited to RLIP), aiming to serve as a benchmark for HOI detection. Below methods are included in this repo:
  - [RLIP-ParSe](https://arxiv.org/abs/2209.01814), a newly-proposed Cross-Modal Relation Detection method for HOI detection.
