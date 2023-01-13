@@ -5,6 +5,8 @@
 [![GitHub Forks](https://img.shields.io/github/forks/JacobYuan7/RLIP)](https://github.com/JacobYuan7/RLIP)
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=JacobYuan7/RLIP)
 
+
+**Update on Jan. 13rd, 2023**: I am uploading the annotations and checkpoints. The code is still under pre-release review because we have a technical issue. Sincere apologies!
 **Update on Dec. 12th, 2022**: The code is under reviewing in Alibaba Group, which will be made public as soon as possible.
 
 💥**News**! **RLIP: Relational Language-Image Pre-training** is accepted to ***NeurIPS 2022*** as a **spotlight** presentation (Top 5%)! Hope you will enjoy reading it.
@@ -38,8 +40,19 @@ If you find our work inspiring or our code useful to your research, please cite:
 }
 ```
 
+## Annotation Preparation
+| Dataset | Setting | Download |
+| ---------- | :-----------:  | :-----------:  |
+| VG | Pre-training |  |
+| HICO-DET | Few-shot 1%, 10% |  |
+| HICO-DET | Zero-shot (UC-NF, UC-RF) |  |
+| HICO-DET |  |  |
+| HICO-DET |  |  |
+
+Note that Zero-shot (NF) do not need any HICO-DET annotations for fine-tuning.
+
 ## Pre-training Dataset (Visual Genome) preparation
-Firstly, we could download VG dataset from the [official link](https://visualgenome.org/api/v0/api_home.html), inclduing images Part I and Part II. The annotations after pre-processing could be downloaded from [this link](******Link to be added******). Note that this is generated from `scene_graphs.json` file by several pre-processing steps to remove redundant triplets. Also, several settings mentioned below also need the annotations that we provide. VG dataset and its corresponding annotations should be organized as follows:
+Firstly, we could download VG dataset from the [official link](https://visualgenome.org/api/v0/api_home.html), inclduing images Part I and Part II. The annotations after pre-processing could be downloaded from [this link](******Link to be added******), which is used for pre-training. Note that this is generated from `scene_graphs.json` file by several pre-processing steps to remove redundant triplets. Also, several settings mentioned below also need the annotations that we provide. VG dataset and its corresponding annotations should be organized as follows:
 ```
 VG
  |─ annotations
