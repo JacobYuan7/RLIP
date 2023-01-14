@@ -6,7 +6,7 @@
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=JacobYuan7/RLIP)
 
 
-- **Update on Jan. 13th, 2023**: I am uploading the annotations and checkpoints. The code is still under pre-release review because we encountered a technical issue. Sincere apologies!
+- **Update on Jan. 13th, 2023**: I am uploading the annotations and checkpoints. The code is still under pre-release review because we encountered a technical issue. It should be out in 1-2 weeks. Sincere apologies!
 - **Update on Dec. 12th, 2022**: The code is under reviewing in Alibaba Group, which will be made public as soon as possible.
 - 💥**News**! **RLIP: Relational Language-Image Pre-training** is accepted to ***NeurIPS 2022*** as a **spotlight** presentation (Top 5%)! Hope you will enjoy reading it.
 
@@ -114,10 +114,10 @@ V-COCO annotations with the HOIA format, `corre_vcoco.npy`, `test_vcoco.json`, a
 Since RLIP pre-trained on VG and COCO dataset, we provide a series of pre-trained weights for you to use. Weights in the table below are used to initialize ParSe/ParSeD/RLIP-ParSe/RLIP-ParSeD for pre-training or fine-tuning.
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Download |
 | ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: |
-| MDETR-ParSe | Modulated Detection | GoldG+ | ResNet-101 | DETR | [Link](******Link to be added******) |
+| MDETR-ParSe | Modulated Detection | GoldG+ | ResNet-101 | DETR | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EU6opo5zQR5Erculzyqg8l0BuGfcYfRp-9pyhu30SqB9qQ?e=q5WX1d) |
 | ParSeD | Object Detection | VG |ResNet-50 | DDETR | [Link](******Link to be added******) |
 | ParSeD | Object Detection | COCO |ResNet-50 | DDETR | [Link](******Link to be added******) |
-| ParSe | Object Detection | COCO |ResNet-50 | DETR | [Link (Query128)](******Link to be added******) <br> [link (Query200)](******Link to be added******) |
+| ParSe | Object Detection | COCO |ResNet-50 | DETR | [Link (Query128)](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EUTlGpsdSf1MsIHaEsQ7V7oBX_ufXXSMNm657jEeUdTQaQ?e=1g63Xe) <br> [link (Query200)](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EbA-wS49GOpOvxQK3HmIi_UBCuRiln15WDRaCO18xFq5KA?e=INg3Us) |
 | ParSe | Object Detection | COCO |ResNet-101 | DETR | [Link (Query128)](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ESEK1Jv5tnhBrvDcGqtYuxwBjZFx2ws-K-qeo9J-LsmdRw?e=d6prKQ) |
 | RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EX2W9LDC7aJHqFCCEvlBz5gBV_kw3nokkKO6eZA8468BlQ?e=7GByjS) |
 | RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ESN0gmIqMdtNlfvukKrxOJkBTF_Oz2R32imDfkShe8ZRAA?e=gUQ8pe) |
