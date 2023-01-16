@@ -14,7 +14,7 @@
 
 - **Update on Jan. 16th, 2023**: I have uploaded the annotations and checkpoints. The code is still under pre-release review because we encountered a minor technical issue. It will be out this week. Sincere apologies!
 - **Update on Dec. 12th, 2022**: The code is under reviewing in Alibaba Group, which will be made public as soon as possible.
-- 💥**News**! **RLIP: Relational Language-Image Pre-training** is accepted to ***NeurIPS 2022*** as a **spotlight** presentation (Top 5%)! Hope you will enjoy reading it.
+- 💥**News**! **RLIP: Relational Language-Image Pre-training** is accepted to **NeurIPS 2022** as a **Spotlight** presentation (Top 5%)! Hope you will enjoy reading it.
 
 ## Outline
 
