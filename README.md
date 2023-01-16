@@ -6,10 +6,10 @@
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=JacobYuan7/RLIP)
 
 ## Todo List and Updates
-- [x] 🎉 Annotations for VG pre-training, HICO-DET few-shot, zero-shot and relation label noise. 
-- [x] 🎉 Checkpoints for pre-training, few-shot, zero-shot and fine-tuning.  
-- [ ] 🕘 Code for pre-training, fine-tuning and inference.  
-- [ ] 🕘 Support for Scene Graph Generation.  
+- [x] 🎉 Release annotations for VG pre-training, HICO-DET few-shot, zero-shot and relation label noise. 
+- [x] 🎉 Release checkpoints for pre-training, few-shot, zero-shot and fine-tuning.  
+- [ ] 🕘 Release code for pre-training, fine-tuning and inference.  
+- [ ] 🕘 Add support for Scene Graph Generation.  
 
 
 - **Update on Jan. 16th, 2023**: I have uploaded the annotations and checkpoints. The code is still under pre-release review because we encountered a minor technical issue. It will be out this week. Sincere apologies!
