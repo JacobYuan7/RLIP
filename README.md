@@ -145,12 +145,12 @@ Note that above scripts contain the installation of dependencies, which could be
 Weights in the table below are fully-fined weights of ParSe/ParSeD/RLIP-ParSe/RLIP-ParSeD using pre-trained weights from the above table.
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Full / Rare / Non-Rare | Download |
 | ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: | :-----------: |
-| ParSeD | RLIP | COCO | ResNet-50 | DDETR | 29.12 / 22.23 / 31.17 | [Link](******Link to be added******) |
-| ParSe | RLIP | COCO | ResNet-50 | DETR | 31.79 / 26.36 / 33.41 | [Link](******Link to be added******) |
-| ParSe | RLIP | COCO | ResNet-101 | DETR | 32.76 / 28.59 / 34.01 | [Link](******Link to be added******) |
-| RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | 29.21 / 24.45 / 30.63 | [Link](******Link to be added******) |
-| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 30.70 / 24.67 / 32.50  | [Link](******Link to be added******) |
-| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 32.84 / 26.85 / 34.63 | [Link](******Link to be added******) |
+| ParSeD | RLIP | COCO | ResNet-50 | DDETR | 29.12 / 22.23 / 31.17 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EaC8-iYrWdNGkbnXAsmp-zUB2vv_r9YHAdM8HAxH-5sIwA?e=QNRfmX) |
+| ParSe | RLIP | COCO | ResNet-50 | DETR | 31.79 / 26.36 / 33.41 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EdW1MtVz8jVHk23LBGhM9oUB1AGUBcj8nXwzxP1wCljjwg?e=NDVaST) |
+| ParSe | RLIP | COCO | ResNet-101 | DETR | 32.76 / 28.59 / 34.01 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EWsgxm0e6oZLmDrogjjPrqABtj3_IHOW3BkFSJNQYF4lkg?e=hl1pTQ) |
+| RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | 29.21 / 24.45 / 30.63 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EUW0_2YnrJdFgjPVbwYkmtMBAO8WM5V1XkLUrjTXJZ8DGQ?e=CPYh0O) |
+| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 30.70 / 24.67 / 32.50  | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EeLAZ23Te3hAlA8uo17orAUBKvy2NWsHCIXzN2kEhd3g1w?e=JmOoPu) |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 32.84 / 26.85 / 34.63 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EQqYKmEnnAJFuB2Wo7HQ0IIBY6gMhxT04EynmD3ea85M_Q?e=SduryR) |
 
 
 ### 2. Few-shot (0, 1%, 10%)
@@ -169,11 +169,11 @@ When there is no extra data provided (0 percent of few-shot transfer), please re
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Data | Full / Rare / Non-Rare | Download |
 | ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 | RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 0 | 13.92 / 11.20 / 14.73 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ESN0gmIqMdtNlfvukKrxOJkBTF_Oz2R32imDfkShe8ZRAA?e=gUQ8pe)\* |
-| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 1% | 18.30 / 16.22 / 18.92 | [Link](******Link to be added******) |
-| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 10% | 22.09 / 15.89 / 23.94 | [Link](******Link to be added******) |
+| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 1% | 18.30 / 16.22 / 18.92 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EX7PtD-9ZR9Mom_EiMzUJOsBltB9HdHC9Jor5x_7DRjxdA?e=bDPpU4) |
+| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 10% | 22.09 / 15.89 / 23.94 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EdTGc-7lPhZDv2EDzZpdBeEBq3PsqdG71ieyiw1AplB2sg?e=RwEsj8) |
 | RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 0 | 15.40 / 15.08 / 15.50 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EfsAWI6hauxPoQXxPU96FrEBQO4J0079JQ3R3n5PA58inA?e=tmTD3a)\* |
-| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 1% | 18.46 / 17.47 / 18.76 | [Link](******Link to be added******) |
-| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 10% | 22.59 / 20.16 / 23.32   | [Link](******Link to be added******) |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 1% | 18.46 / 17.47 / 18.76 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EZ8F5xaJicxJjyf52ciyj7UBCTm-FHPTtyHtGJw5st0s3w?e=WicggG) |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 10% | 22.59 / 20.16 / 23.32   | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EaDUaq1AMHZIjmrj15vUP0EBrc86A6BtLdp31BA62ycAQQ?e=qpqrSp) |
 
 Note: ① \* means that the checkpoints are the same as the ones in the RLIP Pre-training table, since they do not involve any fine-tuning.
 
@@ -196,8 +196,8 @@ bash scripts/Fine-tune_ParSeD_HICO.sh
 ```
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Setting | Full / Rare / Non-Rare | Download |
 | ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | UC-RF | 30.52 / 19.19 / 33.35 | [Link](******Link to be added******) |
-| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | UC-NF | 26.19 / 20.27 / 27.67 | [Link](******Link to be added******) |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | UC-RF | 30.52 / 19.19 / 33.35 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EdzrI7CiJ6ZCrMy-i382nkkBsf49no_eqMDga6bO1pegkQ?e=7pYNhu) |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | UC-NF | 26.19 / 20.27 / 27.67 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ESNmsGfCqbVHpwtf6T8S4PoBpA3HKCfNLPflIq46w7UYYQ?e=idufxL) |
 
 ## Evaluation
 The mAP on HICO-DET under the Full set, Rare set and Non-Rare Set will be reported during the training process.
