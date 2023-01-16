@@ -145,7 +145,7 @@ Note that above scripts contain the installation of dependencies, which could be
 Weights in the table below are fully-fined weights of ParSe/ParSeD/RLIP-ParSe/RLIP-ParSeD using pre-trained weights from the above table.
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Full / Rare / Non-Rare | Download |
 | ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: | :-----------: |
-| ParSeD | RLIP | COCO | ResNet-50 | DDETR | 29.12 / 22.23 / 31.17 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EaC8-iYrWdNGkbnXAsmp-zUB2vv_r9YHAdM8HAxH-5sIwA?e=QNRfmX) |
+| ParSeD | RLIP | COCO | ResNet-50 | DDETR | 29.12 / 22.23 / 31.17 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EWPwB0y3TLpPtCBHgpd29v8BiSfGFo5B_Z2GhxsfBnDe7A?e=Sxn1to) |
 | ParSe | RLIP | COCO | ResNet-50 | DETR | 31.79 / 26.36 / 33.41 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EdW1MtVz8jVHk23LBGhM9oUB1AGUBcj8nXwzxP1wCljjwg?e=NDVaST) |
 | ParSe | RLIP | COCO | ResNet-101 | DETR | 32.76 / 28.59 / 34.01 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EWsgxm0e6oZLmDrogjjPrqABtj3_IHOW3BkFSJNQYF4lkg?e=hl1pTQ) |
 | RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | 29.21 / 24.45 / 30.63 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EUW0_2YnrJdFgjPVbwYkmtMBAO8WM5V1XkLUrjTXJZ8DGQ?e=CPYh0O) |
