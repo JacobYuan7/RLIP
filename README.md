@@ -8,7 +8,7 @@
 ## Todo List and Updates
 - [x] 🎉 Release annotations for VG pre-training, HICO-DET few-shot, zero-shot and relation label noise. 
 - [x] 🎉 Release checkpoints for pre-training, few-shot, zero-shot and fine-tuning.  
-- [ ] 🕘 Release code for pre-training, fine-tuning and inference.  
+- [x] 🎉 Release code for pre-training, fine-tuning and inference.  
 - [ ] 🕘 Add support for Scene Graph Generation.  
 
 - **Update on Jan. 19th, 2023**: I am uploading the code. Note that I changed all the path to prevent from possible information leakage. In order to run the code, you will need to configure the paths to match your own system. To do this, search for the **"/PATH/TO" placeholder** in the code and replace it with the appropriate file path on your system.
