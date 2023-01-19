@@ -19,14 +19,16 @@
 ## Outline
 
 This repo contains the implementation of various methods to resolve HOI detection (not limited to RLIP), aiming to serve as a benchmark for HOI detection. Below methods are included in this repo:
- - [RLIP-ParSe](https://arxiv.org/abs/2209.01814), a newly-proposed Cross-Modal Relation Detection method for HOI detection.
- - [ParSe](https://arxiv.org/abs/2209.01814)
- - [RLIP-ParSeD](https://arxiv.org/abs/2209.01814)
- - [ParSeD](https://arxiv.org/abs/2209.01814)
- - [OCN](https://github.com/JacobYuan7/OCN-HOI-Benchmark), which is a prior work of RLIP finished by us;  
- - [QPIC](https://github.com/hitachi-rd-cv/qpic);  
- - [QAHOI](https://github.com/cjw2021/QAHOI);  
- - [CDN](https://github.com/YueLiao/CDN);
+ - [RLIP-ParSe](https://arxiv.org/abs/2209.01814) (model name in the repo: RLIP-ParSe);
+ - [ParSe](https://arxiv.org/abs/2209.01814) (model name in the repo: ParSe);
+ - [RLIP-ParSeD](https://arxiv.org/abs/2209.01814) (model name in the repo: RLIP-ParSeD);
+ - [ParSeD](https://arxiv.org/abs/2209.01814) (model name in the repo: ParSeD);
+ - [OCN](https://github.com/JacobYuan7/OCN-HOI-Benchmark) (model name in the repo: OCN), which is a prior work of RLIP;  
+ - [QPIC](https://github.com/hitachi-rd-cv/qpic) (model name in the repo: DETRHOI);
+ - [QAHOI](https://github.com/cjw2021/QAHOI) (model name in the repo: DDETRHOI);
+ - [CDN](https://github.com/YueLiao/CDN) (model name in the repo: CDN);
+ 
+ <!--- a newly-proposed Cross-Modal Relation Detection method for HOI detection. -->
 
 
 ## Citation ##
