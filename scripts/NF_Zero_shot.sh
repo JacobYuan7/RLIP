@@ -1,0 +1,68 @@
+# RLIP-ParSe
+python -m torch.distributed.launch --nproc_per_node=1 --use_env main.py \
+        --pretrained /PATH/TO/logs/ParSe_VG_BiasT_Freq500_GIoUVb_PseuEuc03_aftNorm_COCO_bs128_150e/checkpoint0149.pth \
+        --output_dir /PATH/TO/logs/ParSeDETRHOI_Random_enc6_dec33_query200_pnms \
+        --dataset_file hico \
+        --hoi_path /PATH/TO/data/hico_20160224_det \
+        --hoi \
+        --backbone resnet50 \
+        --set_cost_bbox 2.5 \
+        --set_cost_giou 1 \
+        --bbox_loss_coef 2.5 \
+        --giou_loss_coef 1 \
+        --batch_size 4 \
+        --lr_drop 60 \
+        --epochs 80 \
+        --load_backbone supervised \
+        --dec_layers 3 \
+        --enc_layers 6 \
+        --lr 1e-4 \
+        --lr_backbone 1e-5 \
+        --text_encoder_lr 1e-5 \
+        --use_nms_filter \
+        --contrastive_loss_hdim 64 \
+        --RLIP_ParSe \
+        --obj_loss_type cross_entropy \
+        --verb_loss_type focal \
+        --subject_class \
+        --zero_shot_eval hico \
+        --schedule step \
+        --use_no_obj_token \
+        --sampling_stategy freq \
+        --num_queries 100 \
+        --eval \
+
+# RLIP-ParSeD
+python -m torch.distributed.launch --nproc_per_node=1 --use_env main.py \
+        --pretrained /PATH/TO/logs/ParSeD_CEFocal_BiasT_Freq500_PseuEuc03_COCO_bs128_50e/checkpoint0049.pth \
+        --output_dir /PATH/TO/logs/ParSeDETRHOI_Random_enc6_dec33_query200_pnms \
+        --dataset_file hico \
+        --hoi_path /PATH/TO/data/hico_20160224_det \
+        --hoi \
+        --backbone resnet50 \
+        --set_cost_bbox 2.5 \
+        --set_cost_giou 1 \
+        --bbox_loss_coef 2.5 \
+        --giou_loss_coef 1 \
+        --batch_size 4 \
+        --lr_drop 60 \
+        --epochs 80 \
+        --load_backbone supervised \
+        --lr 1e-4 \
+        --dec_layers 3 \
+        --enc_layers 6 \
+        --dim_feedforward 1024 \
+        --num_feature_levels 4 \
+        --with_box_refine \
+        --lr_backbone 1e-5 \
+        --text_encoder_lr 5e-5 \
+        --num_queries 200 \
+        --use_nms_filter \
+        --RLIP_ParSeD \
+        --schedule step \
+        --use_no_obj_token \
+        --obj_loss_type cross_entropy \
+        --verb_loss_type focal \
+        --zero_shot_eval hico \
+        --subject_class \
+        --eval \

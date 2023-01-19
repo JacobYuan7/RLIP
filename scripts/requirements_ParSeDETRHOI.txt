@@ -1,0 +1,21 @@
+# transformers==4.5.1
+cython
+matplotlib
+cycler
+certifi
+python-dateutil
+pyparsing
+opencv-python
+kiwisolver
+pillow
+torch==1.8.1
+torchvision==0.9.1
+git+https://github.com/cocodataset/panopticapi.git#egg=panopticapi
+scipy
+xmltodict
+tqdm
+onnx
+onnxruntime
+prettytable
+timm
+h5py
