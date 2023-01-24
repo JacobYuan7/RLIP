@@ -135,6 +135,7 @@ Since RLIP pre-trained on VG and COCO dataset, we provide a series of pre-traine
 
 With respect to the first, third and fourth line of the pre-trained weights, they are produced from the original codebase. For further reference, you could visit [DDETR](https://github.com/fundamentalvision/Deformable-DETR) and [MDETR](https://github.com/ashkamath/mdetr). The weights provided above are transformed from original codebases. With respect to the last three models' weights, optionally, you can pre-train the model yourself by running the corresponding script:
 ```shell
+cd /PATH/TO/RLIP
 # RLIP-ParSe
 bash scripts/Pre-train_RLIP-ParSe_VG.sh
 # RLIP-ParSeD
@@ -158,6 +159,7 @@ Weights in the table below are fully-fined weights of ParSe/ParSeD/RLIP-ParSe/RL
 ### 2. Few-shot (0, 1%, 10%)
 The scripts are identical to those for fully fine-tuning. The major difference is that we need to add `--few_shot_transfer 10 \` for 10% data of few-shot transfer and  `--few_shot_transfer 1 \` for 1% data of few-shot transfer. Note that we only fine-tune for 10 epochs with the lr dropping at 7th epoch. Thus, you need to change `--lr_drop` and `--epochs` in the script accordingly.
 ```shell
+cd /PATH/TO/RLIP
 # RLIP-ParSeD on HICO
 bash scripts/Fine-tune_RLIP-ParSeD_HICO.sh
 # RLIP-ParSe on HICO
@@ -182,11 +184,13 @@ Note: ① \* means that the checkpoints are the same as the ones in the RLIP Pre
 ### 3. Zero-shot (NF, UC-RF, UC-NF)
 With respect to NF setting, it is actually a testing procedure after loading the pre-trained weights. We could run the script below.
 ```shell
+cd /PATH/TO/RLIP
 # Zero-shot NF setting with RLIP-ParSe/RLIP-ParSeD
 bash scripts/NF_Zero_shot.sh
 ```
 With respect to UC-RF and UC-NF setting, training is required. We could run the script below by adding `--zero_shot_setting UC-RF \` or `--zero_shot_setting UC-NF \`. Note that for UC-NF setting, we only fine-tunes for 40 epochs (lr dropping at 30th epoch) to avoid overfitting. Thus, you need to change `--lr_drop 30 \` and `--epochs 40 \` in the script accordingly.
 ```shell
+cd /PATH/TO/RLIP
 # RLIP-ParSeD on HICO
 bash scripts/Fine-tune_RLIP-ParSeD_HICO.sh
 # RLIP-ParSe on HICO
@@ -206,6 +210,7 @@ The mAP on HICO-DET under the Full set, Rare set and Non-Rare Set will be report
 
 The results for the official evaluation of V-COCO must be obtained by the generated pickle file of detection results.
 ```shell
+cd /PATH/TO/RLIP
 python generate_vcoco_official.py \
         --param_path /PATH/TO/CHECKPOINT \
         --save_path vcoco.pickle \
@@ -213,6 +218,7 @@ python generate_vcoco_official.py \
 ```
 Then you should run following codes after modifying the path to get the final performance:
 ```shell
+cd /PATH/TO/RLIP
 python datasets/vsrl_eval.py
 ```
 
