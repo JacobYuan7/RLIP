@@ -38,7 +38,7 @@ class VCOCO(torch.utils.data.Dataset):
                                82, 84, 85, 86, 87, 88, 89, 90)
         self._valid_verb_ids = range(29)
         
-        vcoco_names_path = '/mnt/data-nas/peizhi/jacob/RLIP/datasets/vcoco_names_v3.json'
+        vcoco_names_path = 'datasets/vcoco_names_v3.json'
         print('Loading VCOCO words from {}...'.format(vcoco_names_path))
         with open(vcoco_names_path, 'r') as f:
             vcoco_names = json.load(f)
