@@ -310,7 +310,7 @@ class HICODetection(torch.utils.data.Dataset):
         # self.correct_mat shape: [117, 80]
         # print(self.correct_mat.shape)
 
-def load_hico_verb_txt(file_path = '/mnt/data-nas/peizhi/jacob/OCN/datasets/hico_verb_names.txt') -> List[list]:
+def load_hico_verb_txt(file_path = 'datasets/hico_verb_names.txt') -> List[list]:
     '''
     Output like [['train'], ['boat'], ['traffic', 'light'], ['fire', 'hydrant']]
     '''
@@ -320,7 +320,7 @@ def load_hico_verb_txt(file_path = '/mnt/data-nas/peizhi/jacob/OCN/datasets/hico
         verb_names.append(' '.join(line.strip().split(' ')[-1].split('_')))
     return verb_names
 
-def load_hico_object_txt(file_path = '/mnt/data-nas/peizhi/jacob/OCN/datasets/hico_object_names.txt') -> List[list]:
+def load_hico_object_txt(file_path = 'datasets/hico_object_names.txt') -> List[list]:
     '''
     Output like [['adjust'], ['board'], ['brush', 'with'], ['buy']]
     '''
