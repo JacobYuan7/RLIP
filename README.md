@@ -9,14 +9,15 @@
 - [x] 🎉 Release annotations for VG pre-training, HICO-DET few-shot, zero-shot and relation label noise. 
 - [x] 🎉 Release checkpoints for pre-training, few-shot, zero-shot and fine-tuning.  
 - [x] 🎉 Release code for pre-training, fine-tuning and inference.  
-- [ ] 🕘 Add support for Scene Graph Generation.  
+- [x] 🎉 Include support for inference on custom images.
+- [ ] 🕘 Include support for Scene Graph Generation.  
 
 - **Update on Jan. 19th, 2023**: I am uploading the code. Note that I changed all the path to prevent from possible information leakage. In order to run the code, you will need to configure the paths to match your own system. To do this, search for the **"/PATH/TO" placeholder** in the code and replace it with the appropriate file path on your system. ⭐⭐⭐Consider starring the repo! ⭐⭐⭐
 - **Update on Jan. 16th, 2023**: I have uploaded the annotations and checkpoints. The code is still under pre-release review because we encountered a minor technical issue. It will be out this week. Sincere apologies!
 - **Update on Dec. 12th, 2022**: The code is under reviewing in Alibaba Group, which will be made public as soon as possible.
 - 💥**News**! **RLIP: Relational Language-Image Pre-training** is accepted to **NeurIPS 2022** as a **Spotlight** presentation (Top 5%)! Hope you will enjoy reading it.
 
-## Outline
+## Model Outline
 
 This repo contains the implementation of various methods to resolve HOI detection (not limited to RLIP), aiming to serve as a benchmark for HOI detection. Below methods are included in this repo:
  - [RLIP-ParSe](https://arxiv.org/abs/2209.01814) (model name in the repo: RLIP-ParSe);
@@ -48,6 +49,16 @@ If you find our work inspiring or our code/annotations useful to your research, 
   year={2022}
 }
 ```
+
+## Inference on Custom Images
+To facilitate the use of custom images without annotations, I have implemented a version of code that supports this. In terms of the pre-trained model, I am using the best-performing [RLIP-ParSe](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EfsAWI6hauxPoQXxPU96FrEBQO4J0079JQ3R3n5PA58inA?e=tmTD3a). To begin, please place your images in the folder `custom_imgs`. Then, you could try running the code below:
+```shell
+cd /PATH/TO/RLIP
+# RLIP-ParSe
+bash scripts/Inference_on_custom_imgs.sh
+```
+After successfully running the code, the generated results will be available in the folder `custom_imgs/result`. I have tested the code on a single Tesla A100 with batch sizes of 1, 2, 3 and 4. Note that, by default, we saved all the detection results (64 pairs). Most of the times, it is possible to set a threshold for the **verb_scores** (multiplication of relation scores and object scores) for the saved results, which will enable their use in your own work. You can do it by yourself and tune the threshold for your work.
+
 
 ## Annotation Preparation
 | Dataset | Setting | Download |
