@@ -57,7 +57,7 @@ cd /PATH/TO/RLIP
 # RLIP-ParSe
 bash scripts/Inference_on_custom_imgs.sh
 ```
-After successfully running the code, the generated results will be available in the folder `custom_imgs/result`. I have tested the code on a single Tesla A100 with batch sizes of 1, 2, 3 and 4. Note that, by default, we saved all the detection results (64 pairs). Most of the times, it is possible to set a threshold for the **verb_scores** (multiplication of relation scores and object scores) for the saved results, which will enable their use in your own work. You can do it by yourself and tune the threshold for your work.
+After successfully running the code, the generated results will be available in the folder `custom_imgs/result`. I have tested the code on a single Tesla A100 with batch sizes of 1, 2, 3 and 4. Note that, by default, we saved all the detection results (64 pairs). In most cases, it is possible to set a threshold for the **verb_scores** (multiplication of relation scores and object scores) for the saved results, which will enable their use in your own work. You can do it by yourself and tune the threshold for your work.
 
 
 ## Annotation Preparation
