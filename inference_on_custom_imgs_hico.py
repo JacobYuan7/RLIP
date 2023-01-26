@@ -352,7 +352,7 @@ def generate_hoi_with_text(model, postprocessors, batch_img_path, verb_text, obj
 
 def load_hico_verb_txt(file_path = 'datasets/hico_verb_names.txt') -> List[list]:
     '''
-    Output like [['train'], ['boat'], ['traffic', 'light'], ['fire', 'hydrant']]
+    Output like [['adjust'], ['board'], ['brush', 'with'], ['buy']]
     '''
     verb_names = []
     for line in open(file_path,'r'):
@@ -362,7 +362,7 @@ def load_hico_verb_txt(file_path = 'datasets/hico_verb_names.txt') -> List[list]
 
 def load_hico_object_txt(file_path = 'datasets/hico_object_names.txt') -> List[list]:
     '''
-    Output like [['adjust'], ['board'], ['brush', 'with'], ['buy']]
+    Output like [['train'], ['boat'], ['traffic', 'light'], ['fire', 'hydrant']]
     '''
     object_names = []
     with open(file_path, 'r') as f:
