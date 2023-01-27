@@ -12,6 +12,7 @@
 - [x] 🎉 Include support for inference on custom images.
 - [ ] 🕘 Include support for Scene Graph Generation.  
 
+- **Update on Jan. 28th, 2023**: I updated the link of the pre-trained model in **Inference on Custom Images**. This updated one is fine-tuned on HICO. The old one is the pre-trained parameters. Sorry about the mistake.
 - **Update on Jan. 19th, 2023**: I am uploading the code. Note that I changed all the path to prevent from possible information leakage. In order to run the code, you will need to configure the paths to match your own system. To do this, search for the **"/PATH/TO" placeholder** in the code and replace it with the appropriate file path on your system. ⭐⭐⭐Consider starring the repo! ⭐⭐⭐
 - **Update on Jan. 16th, 2023**: I have uploaded the annotations and checkpoints. The code is still under pre-release review because we encountered a minor technical issue. It will be out this week. Sincere apologies!
 - **Update on Dec. 12th, 2022**: The code is under reviewing in Alibaba Group, which will be made public as soon as possible.
@@ -51,7 +52,7 @@ If you find our work inspiring or our code/annotations useful to your research, 
 ```
 
 ## Inference on Custom Images
-To facilitate the use of custom images without annotations, I have implemented a version of code that supports this. In terms of the pre-trained model, I am using the best-performing [RLIP-ParSe](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EQqYKmEnnAJFuB2Wo7HQ0IIBY6gMhxT04EynmD3ea85M_Q?e=SduryR). To begin, please place your images in the folder `custom_imgs`. Then, you could try running the code below:
+To facilitate the use of custom images without annotations, I have implemented a version of code that supports this. In terms of the pre-trained model, I am using the best-performing [RLIP-ParSe](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EfsAWI6hauxPoQXxPU96FrEBQO4J0079JQ3R3n5PA58inA?e=tmTD3a). To begin, please place your images in the folder `custom_imgs`. Then, you could try running the code below:
 ```shell
 cd /PATH/TO/RLIP
 # RLIP-ParSe
