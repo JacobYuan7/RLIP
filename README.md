@@ -51,7 +51,7 @@ If you find our work inspiring or our code/annotations useful to your research, 
 ```
 
 ## Inference on Custom Images
-To facilitate the use of custom images without annotations, I have implemented a version of code that supports this. In terms of the pre-trained model, I am using the best-performing [RLIP-ParSe](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EfsAWI6hauxPoQXxPU96FrEBQO4J0079JQ3R3n5PA58inA?e=tmTD3a). To begin, please place your images in the folder `custom_imgs`. Then, you could try running the code below:
+To facilitate the use of custom images without annotations, I have implemented a version of code that supports this. In terms of the pre-trained model, I am using the best-performing [RLIP-ParSe](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EQqYKmEnnAJFuB2Wo7HQ0IIBY6gMhxT04EynmD3ea85M_Q?e=SduryR). To begin, please place your images in the folder `custom_imgs`. Then, you could try running the code below:
 ```shell
 cd /PATH/TO/RLIP
 # RLIP-ParSe
