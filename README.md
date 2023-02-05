@@ -14,9 +14,10 @@
 
 - **Update on Jan. 28th, 2023**: I updated the link of the pre-trained model in **Inference on Custom Images**. This updated one is fine-tuned on HICO. The old one is the pre-trained parameters. Sorry about the mistake.
 - **Update on Jan. 19th, 2023**: I am uploading the code. Note that I changed all the path to prevent from possible information leakage. In order to run the code, you will need to configure the paths to match your own system. To do this, search for the **"/PATH/TO" placeholder** in the code and replace it with the appropriate file path on your system. ⭐⭐⭐Consider starring the repo! ⭐⭐⭐
-- **Update on Jan. 16th, 2023**: I have uploaded the annotations and checkpoints. The code is still under pre-release review because we encountered a minor technical issue. It will be out this week. Sincere apologies!
-- **Update on Dec. 12th, 2022**: The code is under reviewing in Alibaba Group, which will be made public as soon as possible.
-- 💥**News**! **RLIP: Relational Language-Image Pre-training** is accepted to **NeurIPS 2022** as a **Spotlight** presentation (Top 5%)! Hope you will enjoy reading it.
+- **Update on Jan. 16th, 2023**: I have uploaded the annotations and checkpoints. 
+- **Update on Dec. 12th, 2022**: The code is under reviewing in Alibaba Group, which will be made public as soon as possible.  
+- **News**💥! **RLIP: Relational Language-Image Pre-training** is accepted to **NeurIPS 2022** as a **Spotlight** presentation (Top 5%)! Hope you will enjoy reading it.
+<!-- The code is still under pre-release review because we encountered a minor technical issue. It will be out this week. Sincere apologies! -->
 
 ## Model Outline
 
