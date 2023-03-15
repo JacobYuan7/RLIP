@@ -6,6 +6,7 @@
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=JacobYuan7/RLIP)
 
 ## Todo List and Updates
+Note that if you can not get access to the links provided below, try using another browser or contact me by e-mail.
 - [x] 🎉 Release annotations for VG pre-training, HICO-DET few-shot, zero-shot and relation label noise. 
 - [x] 🎉 Release checkpoints for pre-training, few-shot, zero-shot and fine-tuning.  
 - [x] 🎉 Release code for pre-training, fine-tuning and inference.  
