@@ -8,7 +8,7 @@
 ## Updates
 - **Update on Jan. 19th, 2023**: I am uploading the code. Note that I changed all the path to prevent from possible information leakage. In order to run the code, you will need to configure the paths to match your own system. To do this, search for the **"/PATH/TO" placeholder** in the code and replace it with the appropriate file path on your system. ⭐⭐⭐Consider starring the repo! ⭐⭐⭐
 - **Update on Jan. 16th, 2023**: I have uploaded the annotations and checkpoints. 
-- **Update on Dec. 12th, 2022**: The code is under reviewing in Alibaba Group, which will be made public as soon as possible.  
+- **Update on Dec. 12th, 2022**: The code is under pre-release review in Alibaba Group, which will be made public as soon as possible.  
 - **News**💥! **RLIP: Relational Language-Image Pre-training** is accepted to **NeurIPS 2022** as a **Spotlight** presentation (Top 5%)! Hope you will enjoy reading it.
 
 <!---
