@@ -51,6 +51,13 @@ If you find our work inspiring or our code/annotations useful to your research, 
   year={2022}
 }
 
+@inproceedings{Yuan2023RLIPv2,
+  title={RLIPv2: Fast Scaling of Relational Language-Image Pre-training},
+  author={Yuan, Hangjie and Zhang, Shiwei and Wang, Xiang and Albanie, Samuel and Pan, Yining and Feng, Tao and Jiang, Jianwen and Ni, Dong and Zhang, Yingya and Zhao, Deli},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+  year={2023}
+}
+
 @inproceedings{Yuan2022OCN,
   title={Detecting Human-Object Interactions with Object-Guided Cross-Modal Calibrated Semantics},
   author={Hangjie Yuan and Mang Wang and Dong Ni and Liangpeng Xu},
