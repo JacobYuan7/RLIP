@@ -152,10 +152,10 @@ Since RLIP pre-trained on VG and COCO dataset, we provide a series of pre-traine
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Download |
 | ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: |
 | MDETR-ParSe | Modulated Detection | GoldG+ | ResNet-101 | DETR | [Link](https://1drv.ms/u/s!Areeng9Fzbjix1qGLPIu2q8IY_dg?e=eWklT4) |
-| ParSeD | Object Detection | VG |ResNet-50 | DDETR | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EWl5gPmxYbFKkus7wt5J2TYBveMO0MswfcojqlemPcX8ww?e=XbkBcv) |
-| ParSeD | Object Detection | COCO |ResNet-50 | DDETR | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ERl3-qV1GWFNp2lFvO3nSCYBGovlWdrljrkavNy4LOjb-Q?e=g21Ksv) |
-| ParSe | Object Detection | COCO |ResNet-50 | DETR | [Link (Query128)](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EUTlGpsdSf1MsIHaEsQ7V7oBX_ufXXSMNm657jEeUdTQaQ?e=1g63Xe) <br> [Link (Query200)](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EbA-wS49GOpOvxQK3HmIi_UBCuRiln15WDRaCO18xFq5KA?e=INg3Us) |
-| ParSe | Object Detection | COCO |ResNet-101 | DETR | [Link (Query128)](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ESEK1Jv5tnhBrvDcGqtYuxwBjZFx2ws-K-qeo9J-LsmdRw?e=d6prKQ) |
+| ParSeD | Object Detection | VG |ResNet-50 | DDETR | [Link](https://1drv.ms/u/s!Areeng9FzbjiyAmamusfMK2jdfc6?e=tDsgHe) |
+| ParSeD | Object Detection | COCO |ResNet-50 | DDETR | [Link](https://1drv.ms/u/s!Areeng9FzbjiyGNWjuXnVAXdNrWA?e=b0piCY) |
+| ParSe | Object Detection | COCO |ResNet-50 | DETR | [Link (Query128)](https://1drv.ms/u/s!Areeng9Fzbjix1XVGJu7lJsJxskL?e=511bye) <br> [Link (Query200)](https://1drv.ms/u/s!Areeng9Fzbjix1bnEOGreIQddcVn?e=YtNPMn) |
+| ParSe | Object Detection | COCO |ResNet-101 | DETR | [Link (Query128)](https://1drv.ms/u/s!Areeng9Fzbjix1O2RD4I69uwd_JO?e=UVdY9Z) |
 | RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | [Link](https://1drv.ms/u/s!Areeng9Fzbjix15oKkjrK-FZ7NkM?e=We3Erx) |
 | RLIP-ParSeD | RLIP | [COCO](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ERl3-qV1GWFNp2lFvO3nSCYBGovlWdrljrkavNy4LOjb-Q?e=g21Ksv) + VG | ResNet-50 | DDETR | [Link](https://1drv.ms/u/s!Areeng9Fzbjix1xo1hKAaBEgXVZy?e=6a4j6A) |
 | RLIP-ParSe | RLIP | [COCO](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EZp2Qg5FS8hPlEd6uDVnma0BFkiMI2N312DKG_8xFf7aDQ?e=A3EIzo) + VG | ResNet-50 | DETR | [Link](https://1drv.ms/u/s!Areeng9Fzbjix13Fmxp9bYh5MRWT?e=Fn5nnC) |
