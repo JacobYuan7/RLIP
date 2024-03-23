@@ -156,9 +156,9 @@ Since RLIP pre-trained on VG and COCO dataset, we provide a series of pre-traine
 | ParSeD | Object Detection | COCO |ResNet-50 | DDETR | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ERl3-qV1GWFNp2lFvO3nSCYBGovlWdrljrkavNy4LOjb-Q?e=g21Ksv) |
 | ParSe | Object Detection | COCO |ResNet-50 | DETR | [Link (Query128)](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EUTlGpsdSf1MsIHaEsQ7V7oBX_ufXXSMNm657jEeUdTQaQ?e=1g63Xe) <br> [Link (Query200)](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EbA-wS49GOpOvxQK3HmIi_UBCuRiln15WDRaCO18xFq5KA?e=INg3Us) |
 | ParSe | Object Detection | COCO |ResNet-101 | DETR | [Link (Query128)](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ESEK1Jv5tnhBrvDcGqtYuxwBjZFx2ws-K-qeo9J-LsmdRw?e=d6prKQ) |
-| RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EX2W9LDC7aJHqFCCEvlBz5gBV_kw3nokkKO6eZA8468BlQ?e=7GByjS) |
-| RLIP-ParSeD | RLIP | [COCO](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ERl3-qV1GWFNp2lFvO3nSCYBGovlWdrljrkavNy4LOjb-Q?e=g21Ksv) + VG | ResNet-50 | DDETR | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ESN0gmIqMdtNlfvukKrxOJkBTF_Oz2R32imDfkShe8ZRAA?e=gUQ8pe) |
-| RLIP-ParSe | RLIP | [COCO](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EZp2Qg5FS8hPlEd6uDVnma0BFkiMI2N312DKG_8xFf7aDQ?e=A3EIzo) + VG | ResNet-50 | DETR | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EfsAWI6hauxPoQXxPU96FrEBQO4J0079JQ3R3n5PA58inA?e=tmTD3a) |
+| RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | [Link](https://1drv.ms/u/s!Areeng9Fzbjix15oKkjrK-FZ7NkM?e=We3Erx) |
+| RLIP-ParSeD | RLIP | [COCO](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ERl3-qV1GWFNp2lFvO3nSCYBGovlWdrljrkavNy4LOjb-Q?e=g21Ksv) + VG | ResNet-50 | DDETR | [Link](https://1drv.ms/u/s!Areeng9Fzbjix1xo1hKAaBEgXVZy?e=6a4j6A) |
+| RLIP-ParSe | RLIP | [COCO](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EZp2Qg5FS8hPlEd6uDVnma0BFkiMI2N312DKG_8xFf7aDQ?e=A3EIzo) + VG | ResNet-50 | DETR | [Link](https://1drv.ms/u/s!Areeng9Fzbjix13Fmxp9bYh5MRWT?e=Fn5nnC) |
 
 With respect to the first, third and fourth line of the pre-trained weights, they are produced from the original codebase. For further reference, you could visit [DDETR](https://github.com/fundamentalvision/Deformable-DETR) and [MDETR](https://github.com/ashkamath/mdetr). The weights provided above are transformed from original codebases. With respect to the last three models' weights, optionally, you can pre-train the model yourself by running the corresponding script:
 ```shell
@@ -199,10 +199,10 @@ bash scripts/Fine-tune_ParSeD_HICO.sh
 When there is no extra data provided (0 percent of few-shot transfer), please refer to zero-shot NF setting, but performance is present here.
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Data | Full / Rare / Non-Rare | Download |
 | ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 0 | 13.92 / 11.20 / 14.73 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ESN0gmIqMdtNlfvukKrxOJkBTF_Oz2R32imDfkShe8ZRAA?e=gUQ8pe)\* |
+| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 0 | 13.92 / 11.20 / 14.73 | [Link](https://1drv.ms/u/s!Areeng9Fzbjix1xo1hKAaBEgXVZy?e=6a4j6A)\* |
 | RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 1% | 18.30 / 16.22 / 18.92 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiwzfdv4UH6S7hSlS3?e=Sk7Abv) |
 | RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 10% | 22.09 / 15.89 / 23.94 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiwzfdv4UH6S7hSlS3?e=Sk7Abv) |
-| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 0 | 15.40 / 15.08 / 15.50 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EfsAWI6hauxPoQXxPU96FrEBQO4J0079JQ3R3n5PA58inA?e=tmTD3a)\* |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 0 | 15.40 / 15.08 / 15.50 | [Link](https://1drv.ms/u/s!Areeng9Fzbjix13Fmxp9bYh5MRWT?e=Fn5nnC)\* |
 | RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 1% | 18.46 / 17.47 / 18.76 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiwzfdv4UH6S7hSlS3?e=Sk7Abv) |
 | RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 10% | 22.59 / 20.16 / 23.32   | [Link](https://1drv.ms/f/s!Areeng9Fzbjiwzfdv4UH6S7hSlS3?e=Sk7Abv) |
 
