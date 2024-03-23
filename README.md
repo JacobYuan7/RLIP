@@ -87,7 +87,7 @@ After successfully running the code, the generated results will be available in 
 Note: ① \* Zero-shot (NF) do not need any HICO-DET annotations for fine-tuning, so we only provide training annotations for the UC-NF and UC-RF setting.
 
 ## Pre-training Dataset (Visual Genome) preparation
-Firstly, we could download VG dataset from the [official link](https://visualgenome.org/api/v0/api_home.html), inclduing images Part I and Part II. (**Note: If the official website is not working, you can use the link that I provide: [Images](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/Ed38rTcxgq9JnMdQS0SUSAIBE2azKnbq8_ZosJ6RZHaJjg?e=bpeuLt) and [Images2](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/Ea09ejSJ_KpJm_CKmmgMeScB81gSfJXD9gp7INzSrX53mg?e=pPQCo1).**) The annotations after pre-processing could be downloaded from the link above, which is used for pre-training. Note that this is generated from `scene_graphs.json` file by several pre-processing steps to remove redundant triplets. Also, several settings mentioned below also need the annotations that we provide. VG dataset and its corresponding annotations should be organized as follows:
+Firstly, we could download VG dataset from the [official link](https://visualgenome.org/api/v0/api_home.html), inclduing images Part I and Part II. (**Note: If the official website is not working, you can use the link that I provide: [Images](https://1drv.ms/u/s!Areeng9FzbjiyHQu_6NbSmsQf81D?e=BgMdXE) and [Images2](https://1drv.ms/u/s!Areeng9FzbjiyGUtQ8gfA7VVMvVp?e=aRzQeR).**) The annotations after pre-processing could be downloaded from the link above, which is used for pre-training. Note that this is generated from `scene_graphs.json` file by several pre-processing steps to remove redundant triplets. Also, several settings mentioned below also need the annotations that we provide. VG dataset and its corresponding annotations should be organized as follows:
 ```
 VG
  |─ annotations
@@ -200,11 +200,11 @@ When there is no extra data provided (0 percent of few-shot transfer), please re
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Data | Full / Rare / Non-Rare | Download |
 | ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
 | RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 0 | 13.92 / 11.20 / 14.73 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ESN0gmIqMdtNlfvukKrxOJkBTF_Oz2R32imDfkShe8ZRAA?e=gUQ8pe)\* |
-| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 1% | 18.30 / 16.22 / 18.92 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EX7PtD-9ZR9Mom_EiMzUJOsBltB9HdHC9Jor5x_7DRjxdA?e=bDPpU4) |
-| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 10% | 22.09 / 15.89 / 23.94 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EdTGc-7lPhZDv2EDzZpdBeEBq3PsqdG71ieyiw1AplB2sg?e=RwEsj8) |
+| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 1% | 18.30 / 16.22 / 18.92 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiwzfdv4UH6S7hSlS3?e=Sk7Abv) |
+| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 10% | 22.09 / 15.89 / 23.94 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiwzfdv4UH6S7hSlS3?e=Sk7Abv) |
 | RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 0 | 15.40 / 15.08 / 15.50 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EfsAWI6hauxPoQXxPU96FrEBQO4J0079JQ3R3n5PA58inA?e=tmTD3a)\* |
-| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 1% | 18.46 / 17.47 / 18.76 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EZ8F5xaJicxJjyf52ciyj7UBCTm-FHPTtyHtGJw5st0s3w?e=WicggG) |
-| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 10% | 22.59 / 20.16 / 23.32   | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EaDUaq1AMHZIjmrj15vUP0EBrc86A6BtLdp31BA62ycAQQ?e=qpqrSp) |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 1% | 18.46 / 17.47 / 18.76 | [Link](https://1drv.ms/f/s!Areeng9Fzbjiwzfdv4UH6S7hSlS3?e=Sk7Abv) |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 10% | 22.59 / 20.16 / 23.32   | [Link](https://1drv.ms/f/s!Areeng9Fzbjiwzfdv4UH6S7hSlS3?e=Sk7Abv) |
 
 Note: ① \* means that the checkpoints are the same as the ones in the RLIP Pre-training table, since they do not involve any fine-tuning.
 
@@ -229,8 +229,8 @@ bash scripts/Fine-tune_ParSeD_HICO.sh
 ```
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Setting | Full / Rare / Non-Rare | Download |
 | ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: | :-----------: | :-----------: |
-| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | UC-RF | 30.52 / 19.19 / 33.35 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EdzrI7CiJ6ZCrMy-i382nkkBsf49no_eqMDga6bO1pegkQ?e=7pYNhu) |
-| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | UC-NF | 26.19 / 20.27 / 27.67 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ESNmsGfCqbVHpwtf6T8S4PoBpA3HKCfNLPflIq46w7UYYQ?e=idufxL) |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | UC-RF | 30.52 / 19.19 / 33.35 | [Link](https://1drv.ms/f/s!Areeng9FzbjiwzoTAb42YUehBzUL?e=3JHpqP) |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | UC-NF | 26.19 / 20.27 / 27.67 | [Link](https://1drv.ms/f/s!Areeng9FzbjiwzoTAb42YUehBzUL?e=3JHpqP) |
 
 ## Evaluation
 The mAP on HICO-DET under the Full set, Rare set and Non-Rare Set will be reported during the training process.
