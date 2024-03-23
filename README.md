@@ -151,7 +151,7 @@ V-COCO annotations with the HOIA format, `corre_vcoco.npy`, `test_vcoco.json`, a
 Since RLIP pre-trained on VG and COCO dataset, we provide a series of pre-trained weights for you to use. Weights in the table below are used to initialize ParSe/ParSeD/RLIP-ParSe/RLIP-ParSeD for pre-training or fine-tuning.
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Download |
 | ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: |
-| MDETR-ParSe | Modulated Detection | GoldG+ | ResNet-101 | DETR | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EU6opo5zQR5Erculzyqg8l0BuGfcYfRp-9pyhu30SqB9qQ?e=q5WX1d) |
+| MDETR-ParSe | Modulated Detection | GoldG+ | ResNet-101 | DETR | [Link](https://1drv.ms/u/s!Areeng9Fzbjix1qGLPIu2q8IY_dg?e=eWklT4) |
 | ParSeD | Object Detection | VG |ResNet-50 | DDETR | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EWl5gPmxYbFKkus7wt5J2TYBveMO0MswfcojqlemPcX8ww?e=XbkBcv) |
 | ParSeD | Object Detection | COCO |ResNet-50 | DDETR | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/ERl3-qV1GWFNp2lFvO3nSCYBGovlWdrljrkavNy4LOjb-Q?e=g21Ksv) |
 | ParSe | Object Detection | COCO |ResNet-50 | DETR | [Link (Query128)](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EUTlGpsdSf1MsIHaEsQ7V7oBX_ufXXSMNm657jEeUdTQaQ?e=1g63Xe) <br> [Link (Query200)](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EbA-wS49GOpOvxQK3HmIi_UBCuRiln15WDRaCO18xFq5KA?e=INg3Us) |
@@ -175,12 +175,12 @@ Note that above scripts contain the installation of dependencies, which could be
 Weights in the table below are fully-fined weights of ParSe/ParSeD/RLIP-ParSe/RLIP-ParSeD using pre-trained weights from the above table.
 | Model | Pre-training Paradigm | Pre-training Dataset | Backbone | Base Detector | Full / Rare / Non-Rare | Download |
 | ---------- | :-----------:  | :-----------:  | :-----------: | :-----------: | :-----------: | :-----------: |
-| ParSeD | RLIP | COCO | ResNet-50 | DDETR | 29.12 / 22.23 / 31.17 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EWPwB0y3TLpPtCBHgpd29v8BiSfGFo5B_Z2GhxsfBnDe7A?e=Sxn1to) |
-| ParSe | RLIP | COCO | ResNet-50 | DETR | 31.79 / 26.36 / 33.41 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EdW1MtVz8jVHk23LBGhM9oUB1AGUBcj8nXwzxP1wCljjwg?e=NDVaST) |
-| ParSe | RLIP | COCO | ResNet-101 | DETR | 32.76 / 28.59 / 34.01 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EWsgxm0e6oZLmDrogjjPrqABtj3_IHOW3BkFSJNQYF4lkg?e=hl1pTQ) |
-| RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | 29.21 / 24.45 / 30.63 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EUW0_2YnrJdFgjPVbwYkmtMBAO8WM5V1XkLUrjTXJZ8DGQ?e=CPYh0O) |
-| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 30.70 / 24.67 / 32.50  | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EeLAZ23Te3hAlA8uo17orAUBKvy2NWsHCIXzN2kEhd3g1w?e=JmOoPu) |
-| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 32.84 / 26.85 / 34.63 | [Link](https://zjueducn-my.sharepoint.com/:u:/g/personal/hj_yuan_zju_edu_cn/EQqYKmEnnAJFuB2Wo7HQ0IIBY6gMhxT04EynmD3ea85M_Q?e=SduryR) |
+| ParSeD | RLIP | COCO | ResNet-50 | DDETR | 29.12 / 22.23 / 31.17 | [Link](https://1drv.ms/u/s!Areeng9Fzbjix0jDkWKhSi7aILXe?e=zwOhHv) |
+| ParSe | RLIP | COCO | ResNet-50 | DETR | 31.79 / 26.36 / 33.41 | [Link](https://1drv.ms/u/s!Areeng9Fzbjix0uLs6EXdYmtE-MU?e=ySevem) |
+| ParSe | RLIP | COCO | ResNet-101 | DETR | 32.76 / 28.59 / 34.01 | [Link](https://1drv.ms/u/s!Areeng9Fzbjix0-5nBNt_JQ9d_5k?e=41ik0J) |
+| RLIP-ParSeD | RLIP | VG | ResNet-50 | DDETR | 29.21 / 24.45 / 30.63 | [Link](https://1drv.ms/u/s!Areeng9Fzbjix0fOULAHQToKVwVQ?e=gBm5bP) |
+| RLIP-ParSeD | RLIP | COCO + VG | ResNet-50 | DDETR | 30.70 / 24.67 / 32.50  | [Link](https://1drv.ms/u/s!Areeng9Fzbjix1Q31RbKTqpQ8UBp?e=e1bJaI) |
+| RLIP-ParSe | RLIP | COCO + VG | ResNet-50 | DETR | 32.84 / 26.85 / 34.63 | [Link](https://1drv.ms/u/s!Areeng9Fzbjix0bfJeUVjr75KUNJ?e=ZKospd) |
 
 
 ### 2. Few-shot (0, 1%, 10%)
