@@ -24,7 +24,7 @@ Note that if you can not get access to the links provided below, try using anoth
 - [x] 🎉 Release checkpoints for pre-training, few-shot, zero-shot and fine-tuning.  
 - [x] 🎉 Release code for pre-training, fine-tuning and inference.  
 - [x] 🎉 Include support for inference on custom images.
-- [ ] 🕘 Include support for Scene Graph Generation.  
+- [ ] 🕘 Include support for Scene Graph Generation.  (It has been supported in [RLIPv2](https://github.com/JacobYuan7/RLIPv2).)
 
 ## Model Outline
 
