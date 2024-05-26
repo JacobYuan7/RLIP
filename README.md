@@ -79,10 +79,10 @@ After successfully running the code, the generated results will be available in 
 ## Annotation Preparation
 | Dataset | Setting | Download |
 | ---------- | :-----------:  | :-----------:  |
-| VG | Pre-training | [Link](https://1drv.ms/u/s!Areeng9FzbjiyE4ZsPNNhoIVDZnl?e=wUfANf) |
-| HICO-DET | Few-shot 1%, 10% | [Link](https://1drv.ms/f/s!Areeng9FzbjixEBRdVQ7sE8sIyiW?e=LtdYUB) |
-| HICO-DET | Zero-shot (UC-NF, UC-RF)\* | [Link](https://1drv.ms/f/s!Areeng9FzbjixEK_qV1cAwrLMW3A?e=QmX1Za) |
-| HICO-DET | Relation Label Noise (10%, 30%, 50%) | [Link](https://1drv.ms/f/s!Areeng9FzbjixEHejFx_DmfzkeaH?e=3pCOKh) |
+| VG | Pre-training | [Link](https://1drv.ms/u/c/e2b8cd450f9e9eb7/Qbeeng9FzbgggOJOJAAAAAAAGbDzTYaCFQ2Z5Q) |
+| HICO-DET | Few-shot 1%, 10% | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOJAIgAAAAAAUXVUO7BPLCMolg) |
+| HICO-DET | Zero-shot (UC-NF, UC-RF)\* | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOJCIgAAAAAAv6ldXAMKyzFtwA) |
+| HICO-DET | Relation Label Noise (10%, 30%, 50%) | [Link](https://1drv.ms/f/c/e2b8cd450f9e9eb7/Qreeng9FzbgggOJBIgAAAAAA3oxcfw5n85Hmhw) |
 
 Note: ① \* Zero-shot (NF) do not need any HICO-DET annotations for fine-tuning, so we only provide training annotations for the UC-NF and UC-RF setting.
 
